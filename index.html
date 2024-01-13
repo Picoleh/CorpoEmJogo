@@ -1,0 +1,81 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>PicoBio</title>
+
+</head>
+<body>
+    <main>
+        <div class="BotoesArea">
+            <div class="Alimentacao">
+                <ul class="UlMain">
+                    <li class="li1">
+                        <a href="#">Alimentação</a>
+
+                        <ul class="Ul2">
+                            <li class="li2"><a href="#">Carboidratos</a>
+                                            <ul class="Ul3">
+                                                <li class="li3"><a href="#">Macarrao</a></li>
+                                                <li class="li3"><a href="#">Lasanha</a></li>
+                                                <li class="li3"><a href="#">Pizza</a></li>
+                                            </ul>
+                            </li>
+                            <li class="li2"><a href="#">Proteinas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="Opts">
+                <div class="Genero">
+                    <label class="switch">
+                        <input type="checkbox" id="checkGenero" onclick="verificaCheck()">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="palavras">Alternar Genero</span><span class="palavras">Nudez</span>
+                </div>
+
+                <div class="Nudez">
+                    <label class="switch">
+                        <input type="checkbox" id="checkNudez" onclick="verificaNudez()">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+
+            </div>
+            <div class="Middle">
+                <div class="Left">
+                    <div class="Change">Change me</div>
+                </div>
+                <div class="Person">
+                    <img src="img/Man.png" width="220" height="668" id="imagem">
+                </div>
+                <div class="Right">
+                    <div class="Status">
+                        <ul>
+                            <b>Caracteristicas</b>
+                            <li id="Temperature"></li>
+                            <li id="BPM"></li>
+                            <li id="ArterialPressure"></li>
+                        </ul>
+                    </div>
+                    <div class="Clock">
+                        <div class="SelectSpeed">
+                            <label><input type="radio" name="Speed" checked="checked" id="vel1" onclick="Play();" /><span>1x</span></label>
+                            <label><input type="radio" name="Speed" id="vel2" onclick="Play();" /><span>2x</span></label>
+                            <label><input type="radio" name="Speed" id="vel3" onclick="Play();" /><span>4x</span></label><br />
+                        </div>
+                        <div class="SelectMoment">
+                            <label><input type="button" name="Moment" id="pause" onclick="Pause();" /><span class="ImgButtons"><b>||</b></span></label>
+                            <label><input type="button" name="Moment" id="play" onclick="Play();" /><span class="ImgButtons">▶</span></label>
+                            <label><input type="button" name="Moment" id="stop" onclick="Stop();" /><span class="ImgButtons">&#9646</span></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</main>
+</body>
+<script src="index.js"></script>
+</html>

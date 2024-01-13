@@ -1,0 +1,270 @@
+﻿.BotoesArea {
+    display: inline-block;
+    width: 1512px;
+    border: 1px solid;
+    padding: 4px;
+    text-align: center;
+}
+    .BotoesArea .Alimentacao {
+    display:inline-block;
+    text-align:center;
+    }
+    .BotoesArea ul li a:hover {    /* Deixa Menu dropdown escuro */
+        text-decoration: underline;
+        background: #ccc;
+    }
+    .BotoesArea ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+        .BotoesArea .UlMain .li1{
+            position:relative;
+        }
+            .BotoesArea .li1 .Ul2{
+                position:absolute;
+                top:25px;
+                left:15px;
+                display:none;
+            }
+
+    .BotoesArea ul li a {
+        display: block;
+        text-decoration: none;
+        color: #E2144A;
+        background: #fff;
+        padding: 2px;
+        border: 1px solid #ccc;
+    }
+
+    .BotoesArea ul .li1:hover .Ul2{
+        display:block;
+    }
+
+    .BotoesArea .li2 .Ul3 {
+        position: absolute;
+        top:0;
+        left: 89px;
+        display:none;
+    }
+    .BotoesArea ul .li2:hover .Ul3 {
+        display: block;
+    }
+.Opts{
+    border: 1px solid black;
+    width: 100%;
+    margin-top:5px;
+}
+
+    .Opts .palavras {
+        border: 1px solid pink;
+        position:absolute;
+        margin-left:15px;
+        margin-top:7px;
+    }
+        .Opts .palavras:nth-child(3) {
+            margin-left:1330px;
+            border: 1px solid green
+        }
+.Genero {
+    border: 1px solid black;
+    width:95%;
+    margin-top: 5px;
+    text-align: left;
+    display:inline-block;
+}
+
+.Nudez {
+    border: 1px solid black;
+    margin-top: 5px;
+    text-align: right;
+    display: inline-block;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    border: 1px solid blue;
+}
+.switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+.Genero label:nth-child(2){
+    margin-left:20px;
+    position: relative;
+    border: 1px solid green;
+}
+
+
+
+.Middle{
+    border: 1px dashed black;
+    text-align:center;
+    height:680px;
+}
+    .Middle div{
+    display:inline-block;
+    }
+
+    .Left{
+     float:left;
+     border: 1px solid orange;
+     width:300px;
+    }
+        .Change {
+         border: 1px solid Gray;
+         width:200px;
+                }
+    
+        
+    .Person {
+     position:relative;
+     border: 1px solid red;
+     max-width: 230px;
+     text-align: center;
+     }
+        
+    .Right {
+     float: right;
+     border: 1px solid orange;
+     width:300px;
+     height:100%;
+    }
+        .Right div{
+            display:block;
+        }
+        .Status{
+        border: 1px solid green;
+        width: 250px;
+        height:200px;
+        text-align:left;
+        margin:auto;
+        margin-top:240px;
+        }
+            .Status li{
+                list-style-type:none;
+            }
+
+            .Clock{
+                border: 1px solid purple;
+                width:280px;
+                height:75px;
+                margin:auto;
+                margin-top:150px;
+            }
+
+                .Clock .SelectSpeed {
+                    border: 2px dashed yellow;
+                    max-width: 200px;
+                    margin-left: 40px;
+                }
+                .Clock .SelectMoment{
+                    border: 2px dashed orange;
+                    max-width:200px;
+                    margin-left:40px;
+                    margin-top:5px;
+                }
+                .Clock input[type="radio"] {
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 15px;
+                    border: 2px solid #1FBED6;
+                    background-color: white;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                }
+                .Clock .SelectMoment input[type="button"] {
+                    width: 20px;
+                    margin-left: 14px;
+                    margin-right: 10px;
+                    border:none;
+                }
+                .Clock .SelectMoment .ImgButtons {
+                    color: orangered;
+                    left:-25px;
+                    top:-5px;
+                }
+                .Clock .SelectMoment input[type="button"]:hover {
+                    cursor: pointer;
+                }
+                .Clock .SelectMoment .ImgButtons:hover{
+                    cursor:pointer;
+                }
+                .Clock .SelectMoment .ImgButtons b {
+                    font-weight: 900;
+                    font-size: 18px;
+                }  
+
+                    .Clock input[type="radio"]:focus {
+                        outline: none;
+                    }
+                    .Clock input[type="radio"]:checked {
+                        background-color: #1FBED6;
+                    }
+                        .Clock input[type="radio"]:checked ~ span:first-of-type {
+                            color: white;
+                        }
+
+                .Clock label span:first-of-type {
+                    position: relative;
+                    left: -27px;
+                    font-size: 15px;
+                    color: #1FBED6;
+                }
+
+                .Clock label span {
+                    position: relative;
+                    top: -12px;
+                }
+                
